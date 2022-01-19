@@ -1,15 +1,22 @@
 Package: snapedautilityR
-Title: What the Package Does (One Line, Title Case)
+Title: Provide useful EDA functions with just a few lines of code
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+      person(given = "Harry",
+           family = "Chan",
+           role = c("cre"),
+           email = "harryyikhchan@gmail.com"),
+      person(given = "Dongxiao",
+           family = "Li",
+           role = c("aut"),
+           email = "dol23asuka@gmail.com"),
+      person(given = "Kyle",
+           family = "Ahn",
+           role = c("aut"),
+           email = "pyh2982@gmail.com")
+      )
+Description: snapedautilityR is an open-source library that generate useful function to kickstart EDA (Exploratory Data Analysis) with just a few lines of code. The system is built around quickly analyzing the whole dataset and providing a detailed report with visualization. Its goal is to help quick analysis of feature characteristics, detecting outliers from the observations and other such data characterization tasks.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
