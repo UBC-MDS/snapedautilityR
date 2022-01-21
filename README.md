@@ -40,11 +40,26 @@ And the development version from [GitHub](https://github.com/) with:
 devtools::install_github("UBC-MDS/snapedautilityR")
 ```
 
-## Usage (TBC)
+## Usage
 
 ``` r
 library(snapedautilityR)
-## basic example code
+library(palmerpenguins)
+library(ggplot2)
+library(tidyverse)
+library(broom)
+## basic example code for each utility function
+
+# detect_outliers function
+detect_outliers(c(1,1,2,3,4,5,6,9,10,13,40))
+
+# plot_corr function
+numerical_features <- c("bill_length_mm", "body_mass_g", "bill_depth_mm")
+plot_corr(penguins, features = numerical_features)
+
+# plot_histograms function
+df <- penguins
+plot <- plot_histograms(df, c("species", "bill_length_mm", "island"), 2, 100, 100)
 ```
 
 ## Contributors
