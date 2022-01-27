@@ -5,19 +5,26 @@
 \title{Detect outliers in the given list
 Returns a threshold value for the lower bound and upper bound of the outliers and Plot a violin plot of the observations}
 \usage{
-detect_outliers(s)
+detect_outliers(s, width = 150, height = 150)
 }
 \arguments{
 \item{s}{list of double that contains the data}
+
+\item{width}{The width of ggplot. Default set to 150}
+
+\item{height}{The height of ggplot. Default set to 150}
 }
 \value{
 List of double
 A Threshold value for the lower bound and upper bound of the outliers
+
+ggplot object
+A Boxplot of the given values and outliers
 }
 \description{
 Detect outliers in the given list
 Returns a threshold value for the lower bound and upper bound of the outliers and Plot a violin plot of the observations
 }
 \examples{
-detect_outliers(c(1,1,2,3,4,5,6,9,10,13,40))
+detect_outliers(c(1,1,2,3,4,5,6,9,10,13,40), 150, 150)
 }
