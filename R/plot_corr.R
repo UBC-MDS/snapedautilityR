@@ -1,3 +1,8 @@
+library(dplyr, quietly = TRUE)
+library(ggplot2, quietly = TRUE)
+library(tidyr, quietly = TRUE)
+library(tidyverse, quietly = TRUE)
+library(GGally, quietly = TRUE)
 #' A function that generates a pearson correlation plot for a list of numeric features in a given data frame.
 #'
 #' @param df The input data frame for plotting.
@@ -12,13 +17,6 @@
 #'
 #' plot_corr(iris, features = numerical_features)
 #'
-
-library(dplyr, quietly = TRUE)
-library(ggplot2, quietly = TRUE)
-library(tidyr, quietly = TRUE)
-library(tidyverse, quietly = TRUE)
-library(GGally, quietly = TRUE)
-
 plot_corr <- function(df, features=NULL) {
 
   # Tests whether input data is of data.frame type
