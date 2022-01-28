@@ -13,6 +13,39 @@
 #' plot_corr(iris, features = numerical_features)
 #'
 
+library(dplyr, quietly = TRUE)
+library(ggplot2, quietly = TRUE)
+library(tidyr, quietly = TRUE)
+library(tidyverse, quietly = TRUE)
+library(GGally, quietly = TRUE)
+
 plot_corr <- function(df, features=NULL) {
 
+  # Tests whether input data is of data.frame type
+  if (!is.data.frame(df)){
+    stop("The thing you passed in `df` is not a valid data.frame")
+  }
+
+  # Tests whether input features is of the type vector
+  if((!is.vector(features) | !is.character(features)) & (!is.null(features))){
+    stop("Please pass in a vector for 'features'")
+  }
+
+  # Test whether the input data has at least two numeric features
+  if (select_if(df, is.numeric) |>  ncol() < 2) {
+    stop("The 'df' needs at least two numeric features")
+  }
+
+  # Create a data frame with numeric features only
+  num_df <- select_if(df, is.numeric)
+
+  if (length(features) > 0) {
+    num_df <- num_df |> select(all_of(features))
+  }
+
+  # Visualization
+  corr_plot <- ggcorr(num_df, method = c("everything", "pearson")) +
+          ggtitle("Correlation Matrix Plot for Numeric Features")
+
+  corr_plot
 }
