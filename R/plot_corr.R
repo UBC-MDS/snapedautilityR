@@ -32,20 +32,20 @@ plot_corr <- function(df, features=NULL) {
   }
 
   # Test whether the input data has at least two numeric features
-  if (select_if(df, is.numeric) |>  ncol() < 2) {
+  if (dplyr::select_if(df, is.numeric) |>  ncol() < 2) {
     stop("The 'df' needs at least two numeric features")
   }
 
   # Create a data frame with numeric features only
-  num_df <- select_if(df, is.numeric)
+  num_df <- dplyr::select_if(df, is.numeric)
 
   if (length(features) > 0) {
     num_df <- num_df |> select(all_of(features))
   }
 
   # Visualization
-  corr_plot <- ggcorr(num_df, method = c("everything", "pearson")) +
-          ggtitle("Correlation Matrix Plot for Numeric Features")
+  corr_plot <- GGally::ggcorr(num_df, method = c("everything", "pearson")) +
+          ggplot2::ggtitle("Correlation Matrix Plot for Numeric Features")
 
   corr_plot
 }

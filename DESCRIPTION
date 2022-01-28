@@ -32,4 +32,5 @@ Imports:
     cowplot,
     dplyr,
     tidyr,
-    palmerpenguins
+    palmerpenguins,
+    GGally
