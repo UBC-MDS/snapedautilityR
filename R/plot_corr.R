@@ -38,7 +38,7 @@ plot_corr <- function(df, features=NULL) {
   num_df <- dplyr::select_if(df, is.numeric)
 
   if (length(features) > 0) {
-    num_df <- num_df |> select(all_of(features))
+    num_df <- num_df |> dplyr::select(all_of(features))
   }
 
   # Visualization
