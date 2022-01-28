@@ -3,31 +3,28 @@
 \name{plot_histograms}
 \alias{plot_histograms}
 \title{Detect outliers in the given list
-Plots histogram given numeric features of the input dataframe, and
-plots bar charts for categorical features of the input dataframe}
+Plots histogram given numeric features of the input dfframe, and
+plots bar charts for categorical features of the input dfframe}
 \usage{
-plot_histograms(df, features, facet_columns = 2, width = 125, height = 125)
+plot_histograms(df, features, facet_columns = 2)
 }
 \arguments{
-\item{df}{DataFrame that to be used for the plot}
+\item{df}{dfFrame that to be used for the plot}
 
 \item{features}{List of string feature names}
 
 \item{facet_columns}{Number of columns in Integer type for facet options}
-
-\item{width}{The width of sub-plot for each feature. Default set to 125}
-
-\item{height}{The height of sub-plot for each feature Default set to 125}
 }
 \value{
 ggplot object consists of categorical and numeric histograms.
 }
 \description{
 Detect outliers in the given list
-Plots histogram given numeric features of the input dataframe, and
-plots bar charts for categorical features of the input dataframe
+Plots histogram given numeric features of the input dfframe, and
+plots bar charts for categorical features of the input dfframe
 }
 \examples{
-df <- penguins_data
-plot <- plot_histograms(df, c("species", "bill_length_mm", "island"), 2, 100, 100)
+library(palmerpenguins)
+df <- penguins
+plot_histograms(df, c("species", "flipper_length_mm", "bill_length_mm", "body_mass_g", "island"), 3)
 }
