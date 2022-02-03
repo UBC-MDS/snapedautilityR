@@ -3,6 +3,8 @@ library(ggplot2, quietly = TRUE)
 library(tidyr, quietly = TRUE)
 library(tidyverse, quietly = TRUE)
 library(GGally, quietly = TRUE)
+#' Plot correlation matrix
+#'
 #' A function that generates a pearson correlation plot for a list of numeric features in a given data frame.
 #'
 #' @param df The input data frame for plotting.

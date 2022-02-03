@@ -1,0 +1,89 @@
+---
+title: "How to use snapedautilityR"
+author: "Kyle Ahn, Dongxiao Li, Harry Chan"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{How to use snapedautilityR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+`snapedautilityR` an open-source library that generate useful function to kickstart EDA (Exploratory Data Analysis) with just a few lines of code. The system is built around quickly analyzing the whole dataset and providing a detailed report with visualization. Its goal is to help quick analysis of feature characteristics, detecting outliers from the observations and other such data characterization tasks.
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Import library
+
+Here we will demonstrate how to use `snapedautilityR` package for your data science project.
+```{r setup}
+library(snapedautilityR)
+```
+
+## Sample data
+
+We will be using the `penguins` data and `iris` data here.
+```{r}
+library(palmerpenguins)
+head(penguins)
+```
+```{r}
+head(iris)
+```
+
+
+## Plot Histograms
+
+**Functionality**
+
+This function detects outliers in the given list, plots histogram given numeric features of the input data frame, and plots bar charts for categorical features of the input data frame.
+
+**Function inputs**
+
+- df: dfFrame that to be used for the plot
+- features: List of string feature names
+- facet_column: Number of columns in Integer type for facet options
+
+
+```{r fig.width=7, fig.height=4}
+plot_histograms(penguins, c("species", "flipper_length_mm", "bill_length_mm", "body_mass_g", "island"), 3)
+```
+
+## Plot Correlation
+
+**Functionality**
+
+This function generates a pearson correlation plot for a list of numeric features in a given data frame.
+
+**Function inputs**
+
+- df: dfFrame that to be used for the plot
+- features: List of string feature names
+
+```{r fig.width=7, fig.height=4}
+numerical_features <- c('Sepal.Length','Sepal.Width','Petal.Width')
+plot_corr(iris, features = numerical_features)
+```
+
+## Detect Outliers
+
+**Functionality**
+
+This function detect outliers in the given list Returns a threshold value for the lower bound and upper bound of the outliers and Plot a violin plot of the observations.
+
+**Function inputs**
+
+- s: list of double that contains the data
+- width: The width of ggplot. Default set to 150
+- height: The height of ggplot. Default set to 150
+
+```{r fig.width=7, fig.height=4}
+library(dplyr)
+detect_outliers(pull(iris["Sepal.Length"]), 150, 150)
+```
+
+
