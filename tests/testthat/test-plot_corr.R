@@ -6,6 +6,11 @@ test_df <- data.frame(
   "char_d" = c("a","b","c","d","e")
 )
 
+test_df_2 <- data.frame(
+  'num_a' = c(1,5,7,3,16),
+  "char_d" = c("a","b","c","d","e")
+)
+
 test_df_not_df <- as.character(test_df)
 
 
@@ -20,9 +25,14 @@ test_that("The input 'features' must be a vector", {
   expect_error(plot_corr(test_df, c(1,2,3)))
 })
 
-# Tests whether input data has at least two numeric features
+# Tests whether there are at least two numeric features
 test_that("The input 'data' must have at least two numeric features", {
   expect_error(plot_corr(test_df, c('a')))
+})
+
+# Tests whether the input data has at least two numeric features
+test_that("The input 'data' must have at least two numeric features", {
+  expect_error(plot_corr(test_df_2))
 })
 
 # Tests whether output plot is a ggplot object
