@@ -4,6 +4,9 @@
 # snapedautilityR
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/UBC-MDS/snapedautilityR/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/snapedautilityR/actions)
+[![codecov](https://codecov.io/gh/UBC-MDS/snapedautilityR/branch/master/graph/badge.svg?token=ldT1wNBOky)](https://codecov.io/gh/UBC-MDS/snapedautilityR)
 <!-- badges: end -->
 
 snapedautilityR is an open-source library that generate useful function
@@ -45,13 +48,10 @@ devtools::install_github("UBC-MDS/snapedautilityR")
 ``` r
 library(snapedautilityR)
 library(palmerpenguins)
-library(ggplot2)
-library(tidyverse)
-library(broom)
 ## basic example code for each utility function
 
 # detect_outliers function
-detect_outliers(c(1,1,2,3,4,5,6,9,10,13,40))
+detect_outliers(c(1, 1, 2, 3, 4, 5, 6, 9, 10, 13, 40))
 
 # plot_corr function
 numerical_features <- c("bill_length_mm", "body_mass_g", "bill_depth_mm")
@@ -77,9 +77,9 @@ contributing to this project, you agree to abide by its terms.
 ## Similar Work
 
 We recognize EDA (exploratory data analysis) and preprocessing packages
-are common in the Python open source ecosystem. Our package aims to do a
-few things very well, and be light weight. A non exhaustive list of EDA
-helper packages in Python include:
+are common in the R open source ecosystem. Our package aims to do a few
+things very well, and be light weight. A non exhaustive list of EDA
+helper packages in R include:
 
 -   [`dlookr`](https://cran.r-project.org/web/packages/dlookr/index.html)
 
