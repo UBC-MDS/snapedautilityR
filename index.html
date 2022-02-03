@@ -59,7 +59,7 @@
 <div class="page-header"><h1 id="snapedautilityr">snapedautilityR<a class="anchor" aria-label="anchor" href="#snapedautilityr"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end -->
+
 <p>snapedautilityR is an open-source library that generate useful function to kickstart EDA (Exploratory Data Analysis) with just a few lines of code. The system is built around quickly analyzing the whole dataset and providing a detailed report with visualization. Its goal is to help quick analysis of feature characteristics, detecting outliers from the observations and other such data characterization tasks.</p>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>
@@ -90,13 +90,10 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">snapedautilityR</span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/" class="external-link">palmerpenguins</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://broom.tidymodels.org/" class="external-link">broom</a></span><span class="op">)</span>
 <span class="co">## basic example code for each utility function</span>
 
 <span class="co"># detect_outliers function</span>
-<span class="fu"><a href="reference/detect_outliers.html">detect_outliers</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">9</span>,<span class="fl">10</span>,<span class="fl">13</span>,<span class="fl">40</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="reference/detect_outliers.html">detect_outliers</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span>, <span class="fl">5</span>, <span class="fl">6</span>, <span class="fl">9</span>, <span class="fl">10</span>, <span class="fl">13</span>, <span class="fl">40</span><span class="op">)</span><span class="op">)</span>
 
 <span class="co"># plot_corr function</span>
 <span class="va">numerical_features</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"bill_length_mm"</span>, <span class="st">"body_mass_g"</span>, <span class="st">"bill_depth_mm"</span><span class="op">)</span>
@@ -134,7 +131,7 @@
 <div class="section level2">
 <h2 id="similar-work">Similar Work<a class="anchor" aria-label="anchor" href="#similar-work"></a>
 </h2>
-<p>We recognize EDA (exploratory data analysis) and preprocessing packages are common in the Python open source ecosystem. Our package aims to do a few things very well, and be light weight. A non exhaustive list of EDA helper packages in Python include:</p>
+<p>We recognize EDA (exploratory data analysis) and preprocessing packages are common in the R open source ecosystem. Our package aims to do a few things very well, and be light weight. A non exhaustive list of EDA helper packages in R include:</p>
 <ul>
 <li>
 <p><a href="https://cran.r-project.org/web/packages/dlookr/index.html" class="external-link"><code>dlookr</code></a></p>
@@ -191,7 +188,13 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/UBC-MDS/snapedautilityR/actions" class="external-link"><img src="https://github.com/UBC-MDS/snapedautilityR/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://codecov.io/gh/UBC-MDS/snapedautilityR" class="external-link"><img src="https://codecov.io/gh/UBC-MDS/snapedautilityR/branch/master/graph/badge.svg?token=ldT1wNBOky" alt="codecov"></a></li>
+</ul>
+</div>
 
   </div>
 </div>
