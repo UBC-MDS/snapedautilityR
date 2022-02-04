@@ -1,3 +1,5 @@
+#' Detect Outliers
+#'
 #' Detect outliers in the given list
 #' Returns a threshold value for the lower bound and upper bound of the outliers and Plot a violin plot of the observations
 #'

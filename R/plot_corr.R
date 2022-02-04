@@ -1,3 +1,5 @@
+#' Plot Correlation Matrix
+#'
 #' A function that generates a pearson correlation plot for a list of numeric features in a given data frame.
 #'
 #' @param df The input data frame for plotting.
