@@ -1,6 +1,8 @@
-#' Detect outliers in the given list
-#' Plots histogram given numeric features of the input dfframe, and
-#' plots bar charts for categorical features of the input dfframe
+#' Plot histograms
+#'
+#' Detect outliers in the given list.
+#' Plots histogram given numeric features of the input data frame, and
+#' plots bar charts for categorical features of the input data frame
 #'
 #' @param df dfFrame that to be used for the plot
 #'
