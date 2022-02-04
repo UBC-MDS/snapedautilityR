@@ -42,6 +42,9 @@ And the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("UBC-MDS/snapedautilityR")
 ```
+## Documentation & Usage
+
+Documentation and usage examples for snapedautilityR can be found [here](https://ubc-mds.github.io/snapedautilityR/).
 
 ## Usage
 
