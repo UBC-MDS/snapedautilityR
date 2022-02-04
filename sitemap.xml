@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/404.html</loc>
   </url>
   <url>
-    <loc>/CODE_OF_CONDUCT.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>/CONTRIBUTING.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/CONTRIBUTING.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/articles/index.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/articles/my-vignette.html</loc>
   </url>
   <url>
-    <loc>/reference/detect_outliers.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/authors.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/index.html</loc>
   </url>
   <url>
-    <loc>/reference/plot_corr.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/reference/detect_outliers.html</loc>
   </url>
   <url>
-    <loc>/reference/plot_histograms.html</loc>
+    <loc>https://ubc-mds.github.io/snapedautilityR/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://ubc-mds.github.io/snapedautilityR/reference/plot_corr.html</loc>
+  </url>
+  <url>
+    <loc>https://ubc-mds.github.io/snapedautilityR/reference/plot_histograms.html</loc>
   </url>
 </urlset>
