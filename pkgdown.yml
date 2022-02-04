@@ -3,7 +3,7 @@ pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   my-vignette: my-vignette.html
-last_built: 2022-02-04T02:56Z
+last_built: 2022-02-04T03:10Z
 urls:
   reference: https://ubc-mds.github.io/snapedautilityR/reference
   article: https://ubc-mds.github.io/snapedautilityR/articles
