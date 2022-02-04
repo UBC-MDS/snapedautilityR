@@ -2,9 +2,7 @@
 % Please edit documentation in R/plot_histograms.R
 \name{plot_histograms}
 \alias{plot_histograms}
-\title{Detect outliers in the given list
-Plots histogram given numeric features of the input dfframe, and
-plots bar charts for categorical features of the input dfframe}
+\title{Plot histograms}
 \usage{
 plot_histograms(df, features, facet_columns = 2)
 }
@@ -19,9 +17,9 @@ plot_histograms(df, features, facet_columns = 2)
 ggplot object consists of categorical and numeric histograms.
 }
 \description{
-Detect outliers in the given list
-Plots histogram given numeric features of the input dfframe, and
-plots bar charts for categorical features of the input dfframe
+Detect outliers in the given list.
+Plots histogram given numeric features of the input data frame, and
+plots bar charts for categorical features of the input data frame
 }
 \examples{
 library(palmerpenguins)
