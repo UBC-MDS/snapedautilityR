@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_corr.R
 \name{plot_corr}
 \alias{plot_corr}
-\title{A function that generates a pearson correlation plot for a list of numeric features in a given data frame.}
+\title{Plot Correlation Matrix}
 \usage{
 plot_corr(df, features = NULL)
 }

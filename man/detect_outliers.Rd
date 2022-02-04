@@ -2,8 +2,7 @@
 % Please edit documentation in R/detect_outliers.R
 \name{detect_outliers}
 \alias{detect_outliers}
-\title{Detect outliers in the given list
-Returns a threshold value for the lower bound and upper bound of the outliers and Plot a violin plot of the observations}
+\title{Detect Outliers}
 \usage{
 detect_outliers(s, width = 150, height = 150)
 }
