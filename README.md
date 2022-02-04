@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/UBC-MDS/snapedautilityR/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/snapedautilityR/actions)
-[![codecov](https://codecov.io/gh/UBC-MDS/snapedautilityR/branch/master/graph/badge.svg?token=ldT1wNBOky)](https://codecov.io/gh/UBC-MDS/snapedautilityR)
+[![codecov](https://codecov.io/gh/UBC-MDS/snapedautilityR/branch/main/graph/badge.svg?token=ldT1wNBOky)](https://codecov.io/gh/UBC-MDS/snapedautilityR)
 <!-- badges: end -->
 
 snapedautilityR is an open-source library that generate useful function
