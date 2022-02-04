@@ -38,3 +38,4 @@ Imports:
     palmerpenguins,
     GGally
 VignetteBuilder: knitr
+URL: https://ubc-mds.github.io/snapedautilityR/
